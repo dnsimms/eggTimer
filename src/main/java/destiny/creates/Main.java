@@ -6,6 +6,6 @@ public class Main {
     static void main(String[] args) {
         Egg firstEgg = new Egg(Egg.EGG.FRIED);
         firstEgg.printEggType();
-
+        firstEgg.startTimer(Egg.EGG.FRIED);
     }
 }
