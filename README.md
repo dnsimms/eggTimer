@@ -15,4 +15,4 @@ the Egg Timer title card will display for about 3s and then slide up for the sec
 indicate where I will be putting in custom assets, with the four small ones being the egg types in a pixel style
 and the biggest box being a timer dial in an old school timer style.
 
-![Egg Timer title card](assets/eggTimer_entry.png)![Egg Timer start page](assets/eggTimer_second_page-page-001.png)
+![Egg Timer title card](assets/eggTimer_entry.png)    ![Egg Timer start page](assets/eggTimer_second_page-page-001.png)
