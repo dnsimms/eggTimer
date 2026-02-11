@@ -10,25 +10,25 @@ public class Egg {
             public String getEggType(){
                 return "FRIED";
             }
-            public long getCookTime() {return 11L;} //30s for testing purposes
+            public long getCookTime() {return 120L;} //30s for testing purposes
         },
         HARD_BOILED{
             public String getEggType(){
                 return "HARD-BOILED";
             }
-            public long getCookTime() {return 30000L;} //30s for testing purposes
+            public long getCookTime() {return 480L;} //30s for testing purposes
         },
         SOFT_BOILED{
             public String getEggType(){
                 return "SOFT-BOILED";
             }
-            public long getCookTime() {return 30000L;} //30s for testing purposes
+            public long getCookTime() {return 360L;} //30s for testing purposes
         },
         SEMI_HARD_BOILED{
             public String getEggType(){
                 return "SEMI HARD-BOILED";
             }
-            public long getCookTime() {return 30000L;} //30s for testing purposes
+            public long getCookTime() {return 720L;} //30s for testing purposes
         };
 
         /**
@@ -89,7 +89,8 @@ public class Egg {
         long startTime = System.currentTimeMillis();
         while(!eggTimerHandle.isDone()){
             long elapsedTime = System.currentTimeMillis() - startTime;
-            long elapsedSeconds = elapsedTime/1000;
+            long elapsedSeconds = eggType.getCookTime() - elapsedTime/1000;
+            //System.out.println(elapsedSeconds);
 
             String seconds = Integer.toString((int) (elapsedSeconds % 60));
             String minutes = Integer.toString((int) ((elapsedSeconds % 3600) / 60));
