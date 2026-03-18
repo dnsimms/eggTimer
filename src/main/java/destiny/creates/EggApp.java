@@ -41,7 +41,6 @@ public class EggApp extends Application {
         exitButton.setOnAction(event ->{
             System.exit(0);
         });
-
         Scene scene = new Scene(stackPane, 412, 917);//creates the look of the 'window'
         scene.getStylesheets().add("pixelStyler.css");
         scene.setFill(Color.TRANSPARENT);
